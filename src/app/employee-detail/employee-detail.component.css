@@ -1,0 +1,60 @@
+.btn {
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+	border-radius: .4rem;
+}
+
+.details-display {
+	float: left;
+	margin: 30px;
+	margin-top: 80px;
+	border-left: 20px solid gray;
+	border-bottom: 1px solid gray;
+	padding-left: 30px;
+	padding-bottom: 20px; 
+	width: 40%;
+	background-color: lightgray;
+}
+
+.details-subhead {
+	color: #112a46;
+	font-size: 50px;
+	font-style: oblique;
+}
+
+.details {
+	font-size: 30px;
+	color: #0000cd;
+	font-weight: bold;
+}
+
+.details-label {
+	font-weight: normal;
+}
+
+.save-btn {
+	float: right;
+	color: #ffffff;
+	background-color: #86e619;
+	height: 70px;
+	width: 100px;
+	font-size: 30px;
+}
+
+.edit {
+	margin: 20px;
+	height: 20px; 
+}
+
+.id-section, .name-section {
+	float: left;
+}
+
+.edit:active {
+	border: 1px solid black;
+}

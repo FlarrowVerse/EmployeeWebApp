@@ -1,0 +1,74 @@
+.label {
+	color: teal;
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+
+.sub-heading {
+	color: darkblue;
+	font-size: 27px;
+}
+
+.table-display {
+	width: 25%;
+	font-size: 20px;
+	float: left;
+	margin-top: 80px;
+}
+
+table, td, tr, th {
+	border: 1px solid black;
+}
+
+.btn {
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+	border-radius: .4rem;
+}
+
+.del-btn {
+	color: #ffffff;
+	background-color: #ff0000;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.view-btn {
+	color: #ffffff;
+	background-color: #2dcaed;
+}
+
+.container {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+
+	background: rgba(115, 117, 116, 0.3);
+	padding: 10px;
+	border-left: 13px solid darkgray;
+	width: 100%;
+}
+
+.container button {
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+	background-color: #1cc94a;
+	border-radius: 0.4rem;
+	margin-top: 5px;
+}
+
+.container label {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.container h2 {
+	font-weight: bold;
+	font-size: 30px;
+}

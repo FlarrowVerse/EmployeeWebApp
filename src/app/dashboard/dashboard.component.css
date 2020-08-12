@@ -1,0 +1,14 @@
+.container {
+	position: fixed;
+	top: 90px;
+	left: 10px;
+}
+
+.container button {
+	font-weight: bold;
+	font-size: 40px;
+	color: #fff;
+	background-color: #1cc94a;
+	border-radius: 0.4rem;
+	margin-top: 5px;
+}

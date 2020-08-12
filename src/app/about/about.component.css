@@ -1,0 +1,8 @@
+.container {
+	font-size: 30px;
+	position: fixed;
+	top: 60px;
+	left: 0px;
+	background: rgba(153, 147, 151, 0.4);
+	padding-left: 10px;	
+}

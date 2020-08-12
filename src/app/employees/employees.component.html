@@ -1,0 +1,31 @@
+<div class="table-display">
+	<table class="table">
+		<tr>
+			<th>Employee ID</th>
+			<th>Employee Name</th>
+			<th>Edit Options</th>
+		</tr>
+		<tr *ngFor="let employee of employees">
+			<td>{{employee.id}}</td>			
+			<td>{{employee.name}}</td>	
+			<td>
+				<button class="btn view-btn" (click)="onSelect(employee)">View</button> 
+				<button class="btn del-btn" (click)="delete(employee)">Delete</button>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<app-employee-detail [employee]="selectedEmployee"></app-employee-detail>
+
+<div class="container">
+	<h2>Add New Employee Record</h2>
+	<form class="add-employee">
+		<label>Enter ID: <input #employeeID></label>
+		<br><br>
+		<label>Enter Name: <input #employeeName></label>
+	</form>
+	<button 
+	(click)="add(employeeID.value, employeeName.value); employeeName.value=''; employeeID.value='';"
+	>Register</button>	
+</div>
