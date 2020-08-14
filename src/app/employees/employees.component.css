@@ -10,7 +10,7 @@
 }
 
 .table-display {
-	width: 25%;
+	width: 50%;
 	font-size: 20px;
 	float: left;
 	margin-top: 80px;
@@ -31,6 +31,10 @@ table, td, tr, th {
 	border-radius: .4rem;
 }
 
+.btn:hover {
+	opacity: 0.5;
+}
+
 .del-btn {
 	color: #ffffff;
 	background-color: #ff0000;
@@ -45,8 +49,8 @@ table, td, tr, th {
 
 .container {
 	position: fixed;
-	bottom: 10px;
-	left: 10px;
+	top: 400px;
+	left: 1025px;
 
 	background: rgba(115, 117, 116, 0.3);
 	padding: 10px;

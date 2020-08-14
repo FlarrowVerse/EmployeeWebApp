@@ -9,16 +9,24 @@
 	border-radius: .4rem;
 }
 
+.btn:hover {
+	opacity: 0.5;
+}
+
 .details-display {
 	float: left;
-	margin: 30px;
 	margin-top: 80px;
+	margin-bottom: 20px;
 	border-left: 20px solid gray;
 	border-bottom: 1px solid gray;
 	padding-left: 30px;
 	padding-bottom: 20px; 
-	width: 40%;
+	width: 42%;
 	background-color: lightgray;
+
+	position: fixed;
+	top: 20px;
+	right: 0px;
 }
 
 .details-subhead {
