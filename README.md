@@ -1,4 +1,4 @@
-# EmployeeApp
+# Employee Web Application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
@@ -6,30 +6,61 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Necessary installations
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Installation of Angular cli and node js is a must. Along with that following node modules are also required
+to run the application
 
-## Build
+# Node Modules:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+If the server does not work right, install following modules.
 
-## Running unit tests
+Go to the `./server` directory inside the main directory and run `npm init` to create package.json file.
+Then do the following:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Express:
 
-## Running end-to-end tests
+`npm install express --save`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Body-Parser:
 
-## Further help
+`npm install body-parser --save`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+CORS:
 
-## Additional Installations
+`npm install cors --save`
 
-Additional installations include the angular-in-memory-web-api
 
-Installation instructions:
+## Test the Project
 
-`npm install angular-in-memory-web-api --save`
+# Launch the server
+
+Navigate the directory server under EmployeeWebApp and launch a terminal. Use following command to launch the node js server
+
+`npm start`
+
+OR
+
+`node server.js`
+
+You have to keep this running for the web app to have a functional back-end.
+
+Press `Ctrl + C` to close the server.
+
+# Launch the web application
+
+Inside the main directory open another terminal and use the command:
+
+`ng serve --open`
+
+to open up the web application in your default browser.
+
+Alternatively, use 
+
+`ng serve`
+
+and open the link
+
+`http://localhost:4200`
+
+in your favorite browser.
