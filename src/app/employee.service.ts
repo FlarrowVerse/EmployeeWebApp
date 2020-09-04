@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-
 import { Employee } from './employee';
 
 @Injectable({
@@ -10,25 +9,28 @@ import { Employee } from './employee';
 })
 export class EmployeeService {
 
-	private employeesUrl = 'api/employees';
+	private employeesUrl = '/employees';
+  private url = 'http://localhost:8000/api';
 
 	httpOptions = {headers: new HttpHeaders({ 'Content-type': 'application/json' })};
 
 	constructor(private http: HttpClient) { }
 
 	getEmployees(): Observable<Employee[]> {
-		return this.http.get<Employee[]>(this.employeesUrl);
+		return this.http.get<Employee[]>(this.url + this.employeesUrl);
 	}
 
-	updateEmployee(employee: Employee): Observable<any> {
-		return this.http.put(this.employeesUrl, employee, this.httpOptions);
+	updateEmployee(employee: Employee): Observable<Employee[]> {
+		this.http.put(this.url + this.employeesUrl + '/' + employee.id, employee, this.httpOptions).subscribe();
+    return this.getEmployees();
 	}
 
 	addEmployee(employee: Employee): Observable<Employee> {
-		return this.http.post<Employee>(this.employeesUrl, employee, this.httpOptions);
+		return this.http.post<Employee>(this.url + this.employeesUrl, employee, this.httpOptions);
 	}
 
-	deleteEmployee(employee: Employee | number) {
-		console.log("Deleted " + employee);		
+	deleteEmployee(employee: number) {
+		const url = `${this.url+this.employeesUrl}/${employee}`;
+    this.http.delete(url, this.httpOptions).subscribe();
 	}
 }

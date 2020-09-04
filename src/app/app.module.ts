@@ -10,8 +10,8 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './about/about.component';
 
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
+// import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+// import { InMemoryDataService } from './in-memory-data.service';
 
 @NgModule({
   declarations: [
@@ -23,8 +23,8 @@ import { InMemoryDataService } from './in-memory-data.service';
   ],
   imports: [
     HttpClientModule,
-    HttpClientInMemoryWebApiModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false }),
+    // HttpClientInMemoryWebApiModule,
+    // HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false }),
     BrowserModule,
     FormsModule,
     AppRoutingModule

@@ -10,9 +10,9 @@ import { EmployeeService } from '../employee.service';
 })
 export class EmployeesComponent implements OnInit {
 
-    employees: Employee[] = [];
+    employees: Employee[];
     selectedEmployee: Employee;
-  
+
 
   	constructor(private employeeService: EmployeeService) { }
 
@@ -34,11 +34,13 @@ export class EmployeesComponent implements OnInit {
       .subscribe(employee => {
         this.employees.push(employee);
       });
+      location.reload();
     }
 
     delete(employee: Employee): void {
       this.employees = this.employees.filter(e => e !== employee);
-      this.employeeService.deleteEmployee(employee);
+      this.employeeService.deleteEmployee(employee.id);
+      location.reload();
     }
 
 }

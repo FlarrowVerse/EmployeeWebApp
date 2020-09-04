@@ -6,10 +6,10 @@
 			<th>Edit Options</th>
 		</tr>
 		<tr *ngFor="let employee of employees">
-			<td>{{employee.id}}</td>			
-			<td>{{employee.name}}</td>	
+			<td>{{employee.id}}</td>
+			<td>{{employee.name}}</td>
 			<td>
-				<button class="btn view-btn" (click)="onSelect(employee)">View</button> 
+				<button class="btn view-btn" (click)="onSelect(employee)">View</button>
 				<button class="btn del-btn" (click)="delete(employee)">Delete</button>
 			</td>
 		</tr>
@@ -25,7 +25,7 @@
 		<br><br>
 		<label>Enter Name: <input #employeeName></label>
 	</form>
-	<button 
-	(click)="add(employeeID.value, employeeName.value); employeeName.value=''; employeeID.value='';"
-	>Register</button>	
+	<button
+	(click)="add(+employeeID.value, employeeName.value); employeeName.value=''; employeeID.value='';"
+	>Register</button>
 </div>
